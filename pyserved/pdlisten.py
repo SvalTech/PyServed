@@ -4,7 +4,7 @@
 deepthought@42 ~ $ pdlisten
 
 [{constants.success}]: Server is listening on 192.168.1.58:8080
-[{constants.success}]: Connection Key: 192@168@1@58+8080
+[{constants.success}]: Connection Key: 192.168.1.58:8080
 [{constants.success}]: Waiting for a connection for files...
 
 This program is used to listen for incoming connections from the 
@@ -38,7 +38,7 @@ from rich import print
 
 
 def keymaker(key: str) -> str:
-    return key.replace(".", "@").replace(":", "+")
+    return key.replace(".", ".").replace(":", ":")
 
 
 # HEADER Variable
