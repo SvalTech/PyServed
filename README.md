@@ -46,7 +46,7 @@ To send files, you will have to run the following command (The correct output is
 $ pdlisten
 
 [SERVER]: Server is listening on 192.168.1.5:8080
-[SERVER]: Connection Key: 192@168@1@58+8080
+[SERVER]: Connection Key: 192.168.1.58:8080
 [SERVER]: Waiting for a connection for files...
 ```
 
