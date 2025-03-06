@@ -45,8 +45,8 @@ BUFFER_SIZE = 1024 * 100000
 def validate_key(key):
     # Correct key = 192@168@3@92+8080
     
-    key_ca = key.split('@')
-    if len(key_ca) == 4 and "+" in key_ca[3]:
+    key_ca = key.split('.')
+    if len(key_ca) == 4 and ":" in key_ca[3]:
         return True
     else:
         return False
@@ -115,7 +115,7 @@ except IndexError:
 
 # Creates the key
 
-keybreaker = lambda key: key.replace("@", ".").replace("+", ":").strip(":")
+keybreaker = lambda key: key
 
 # Program start
 
